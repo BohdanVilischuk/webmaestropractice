@@ -1,0 +1,391 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+* {
+    font-family: 'ProximaNovaLight';
+}
+header {
+    background-image: url("../img/bg.png");
+    font-size: 12px;
+}
+li {
+	list-style: none;
+}
+div,
+span,
+a {
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.logo-img {
+	max-width: 91px;
+	width: 100%;
+	height: 25px;
+}
+.header-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: white;
+	flex-wrap: wrap;
+}
+.menu-burger {
+	background-color: #cf9893;
+	padding: 17px 11px 16px 12px;
+	z-index: 99;
+	line-height: 0;
+	font-size: 0;
+	width: 53px;
+	height: 100%;
+	cursor: pointer;
+}
+.menu-burger > span:first-child {
+	margin-top: 0;
+}
+.menu-burger > span {
+	display: inline-block;
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	margin-top: 8px;
+}
+.phones {
+	font-size: 12px;
+	color: #898889;
+}
+.lang {
+	padding-left: 1px;
+	color: gray;
+	text-align: center;
+	
+	
+}
+
+.languages-choise {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	color: gray;
+	position: relative;
+	
+}
+.lang-dropdown {
+	position: absolute;
+	top: 35px;
+	right: 10px;
+	display: none;
+	background-color: #fff;
+}
+
+
+
+.items {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.item {
+	margin-right: -10px;
+	background: white;
+	min-width: 90px;
+
+	padding-top: 15px;
+	padding-bottom: 17px;
+
+	text-align: center;
+	flex-grow: 1;
+	margin: 10px 10px 10px 0;
+}
+.item-img {
+	height: 100%;
+	max-height: 30px;
+}
+.item-description {
+	color: #333;
+	font-size: 14px;
+}
+.item:hover {
+	cursor: pointer;
+	background-color: #d34d64;
+	.item-description {
+		color: white;
+	}
+}
+
+.shop-basket {
+	padding: 17px 17px;
+	color: white;
+	background-color: #d3c29f;
+	border: 0px solid #d3c29f;
+	border-radius: 50px;
+	position: relative;
+}
+.shop-items {
+	padding: 2px 5px;
+	background-color: #cf9893;
+	border: 0px solid #cf9893;
+	border-radius: 50px;
+	position: absolute;
+	font-size: 10px;
+	right: 0;
+	text-align: center;
+}
+.search-box {
+	width: 100%;
+}
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	max-width: 120px;
+	border-bottom: 1px solid #fff;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.search-txt::placeholder {
+	font-size: 14px;
+	color: #fff;
+}
+.search-lens {
+	margin-left: 2px;
+	border-radius: 50px;
+	border: 1px solid #d3c29f;
+	background-color: #d3c29f;
+	padding: 11px 12px;
+}
+.search-lens:hover {
+	background-color: blueviolet;
+}
+.open-menu {
+	position: fixed;
+	background-color: #874463;
+	width: 100%;
+	height: 95%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-align: center;
+	opacity: 0.9;
+	transform: translateX(-100%);
+	transition: 0.2s all linear;
+}
+.open-lang {
+	z-index: 111;
+}
+.open-menu__active {
+	transform: translateX(0);
+
+	z-index: 102;
+}
+.shop-basket:hover {
+	color: white;
+	background-color: blueviolet;
+}
+.menu-items {
+	padding-top: 35px;
+}
+.menu-burger__items {
+	padding-top: 10px;
+}
+.login {
+	color: #cf9893 !important;
+
+	font-size: 20px;
+
+	text-decoration: underline;
+}
+.menu-burger__link {
+	padding: 10px 0px;
+	color: #ffffff;
+	font-family: "Museo Cyrl -500";
+	font-size: 20px;
+	align-items: center;
+}
+.menu-burger__link:hover {
+	background-color: #fff;
+	color: #898889;
+}
+.menu-close {
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 15px;
+	position: absolute;
+	z-index: 101;
+}
+.menu-close__line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+}
+.menu-close__line:first-child {
+	transform: translateY(-50%) rotate(45deg);
+}
+.menu-close__line:last-child {
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.item-open {
+	position: absolute;
+
+	z-index: 101;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	transform: translateX(-100%);
+	transition: 0.3s linear all;
+}
+.opened {
+	transform: translateX(0);
+	position: absolute;
+	height: 100%;
+}
+.open-item__img {
+	max-width: 40px;
+	width: 100%;
+	max-height: 32px;
+	height: 100%;
+}
+
+.item-open__top {
+	display: flex;
+	align-items: center;
+	padding: 2px 0;
+	background-color: #f8f8f8;
+}
+.back {
+	padding-left: 20px;
+	color: #898889;
+	font-size: 14px;
+}
+.angle-double {
+	padding-right: 3px;
+}
+.img-desc {
+	font-size: 14px;
+	color: #333333;
+	padding-left: 5px;
+}
+.open-item__upper {
+	margin-left: 55px;
+	display: flex;
+	align-items: center;
+}
+.item-open__main {
+	background: #fff;
+	overflow: auto;
+	max-height: 300px;
+	position: relative;
+}
+.main-item__container {
+	padding: 5px 15px;
+}
+.main-item__border {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d2d2d2;
+	display: flex;
+	align-items: center;
+}
+.main-link {
+	color: #cf9893;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.less-link {
+	color: #898889;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.main-item__img {
+	padding-left: 10px;
+}
+.main-item__description {
+	margin-left: 30px;
+}
+
+.main-item__under {
+	color: black;
+	font-size: 14px;
+}
+.animation-box {
+	
+margin-left: 45px;
+
+}
+.box {
+
+	height: 15px;
+
+	width: 15px;
+}
+
+
+.item-open__open-all {
+	box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1);
+	background-color: #f8f8f8;
+	align-items: center;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+.item-slider {
+	position: relative;
+}
+.item-open__slider {
+	background-color: white;
+	box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.item-slide {
+	width: 170px;
+	height: 47px;
+	margin-left: 65px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.mobile-next__button {
+	position: absolute;
+	z-index: 102;
+	top: 45%;
+	left: 3%;
+}
+.mobile-prev__button {
+	position: absolute;
+	z-index: 102;
+	top: 45%;
+	right: 8%;
+}
+.contacts-container {
+	display: none;
+}
+.basket-container {
+	display: none;
+}
+.tablet-slider {
+	display: none;
+}
+
+.desktop-contacts__container {
+	display: none;
+  }
+  .desktop-basket {
+	display: flex;
+  }
+  .desktop-basket {
+	display: none;
+  }
+
+@import "media";
