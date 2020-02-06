@@ -14,9 +14,11 @@ li {
 }
 div,
 span,
+form,
 a {
 	display: block;
 }
+
 a {
 	text-decoration: none;
 	color: white;
@@ -57,6 +59,9 @@ a {
 .phones {
 	font-size: 12px;
 	color: #898889;
+}
+.phones a {
+	color: black;
 }
 .lang {
 	padding-left: 1px;
@@ -142,6 +147,9 @@ a {
 .search-box {
 	width: 100%;
 }
+.search-box  a {
+	color: white;
+}
 .search-txt {
 	border: none;
 	background: none;
@@ -163,6 +171,7 @@ a {
 	border: 1px solid #d3c29f;
 	background-color: #d3c29f;
 	padding: 11px 12px;
+	color: white;
 }
 .search-lens:hover {
 	background-color: blueviolet;
@@ -181,7 +190,7 @@ a {
 	transition: 0.2s all linear;
 }
 .open-lang {
-	z-index: 111;
+	z-index: 98;
 }
 .open-menu__active {
 	transform: translateX(0);
@@ -387,5 +396,27 @@ margin-left: 45px;
   .desktop-basket {
 	display: none;
   }
+  .search-txt__desktop {
+	border: none;
+	background: none;
+	outline: none;
+	max-width: 130px;
+	border-bottom: 1px solid white;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #fff;
+}
+.search-box__desktop {
+	
+	display: flex;
+	justify-content: center;
+}
+input::placeholder {
+	color: white;
+}
+.search-box__desktop a {
+	color: white;
+}
+
 
 @import "media";

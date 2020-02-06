@@ -1,3 +1,4 @@
+
 @media (min-width:400px) {
   .open-item__upper {
       margin-left: 100px;
@@ -32,6 +33,12 @@
   }
 }
 @media(min-width:750px) {
+    .search-box__desktop {
+        display: none;
+    }
+    a {
+        color: black;
+    }
   header {
       padding: 5px 0;
       background-image: url("../img/tablet-bg.png");
@@ -399,11 +406,11 @@
       border-bottom: 1px solid #898889;
       margin-left: 60px;
   }
-  .desktop-contacts__top div.tel1 {
+  .desktop-contacts__top a.tel1 {
       color: #898889;
       margin-left: 60px;
   }
-  .desktop-contacts__top div.tel1:first-child {
+  .desktop-contacts__top a.tel1:first-child {
       margin-left: 0;
   }
   .desktop-contacts__bot {
@@ -470,6 +477,11 @@
   }
   .search-box__desktop {
       margin-left: 70px;
+      display: flex;
+      align-items: center;
+  }
+  .search-box__desktop a {
+      color: white;
   }
   .lang-dropdown {
       top: 77px;
@@ -570,11 +582,11 @@
       border-bottom: 1px solid #898889;
       margin-left: 60px;
   }
-  .desktop-contacts__top div.tel1 {
+  .desktop-contacts__top a.tel1 {
       color: #898889;
       margin-left: 60px;
   }
-  .desktop-contacts__top div.tel1:first-child {
+  .desktop-contacts__top a.tel1:first-child {
       margin-left: 0;
   }
   .desktop-contacts__bot {
@@ -642,6 +654,9 @@
   .search-box__desktop {
       margin-left: 70px;
   }
+  .search-box__desktop a {
+    color: white;
+}
   .lang-dropdown {
       top: 77px;
       right: 635px;
