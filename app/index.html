@@ -6,6 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Document</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     
       <link rel="stylesheet" href="css/style.min.css">
    </head>
    <body>
@@ -23,9 +24,9 @@
                   <span class="menu-close__line"></span>
                </div>
                <div class="menu-items">
-                  <div class="shop-basket fa fa-shopping-basket" aria-hidden="true">
+                  <a class="shop-basket fa fa-shopping-basket" aria-hidden="true">
                      <div class="shop-items">0</div>
-                  </div>
+                  </a>
                   <div class="menu-burger__items">
                      <a href="#" class="menu-burger__link login">Вхід</a>
                      <a href="#" class="menu-burger__link login">Реєстрація</a>
@@ -33,7 +34,7 @@
                      <a href="#" class="menu-burger__link">Доставка</a>
                      <a href="#" class="menu-burger__link">Контакти</a>
                      <form action="">
-                     <div class="search-box__desktop"><input class="search-txt__desktop "type="search" placeholder="Знайти"><div> <input    type="image" src="img/search-lens.png" class="search-lens "></input></div></div></form>
+                     <div class="search-box__desktop"><input class="search-txt__desktop "type="search" placeholder="Знайти"><button type="submit" class="input-submit" ></button></div></form>
                   </div>
                </div>
             </nav>
@@ -53,7 +54,7 @@
                   <a href="#" class="desktop-links">Доставка</a>
                   <a href="#" class="desktop-links">Контакти</a>
                  
-                  <form class="search-box__desktop"><input class="search-txt__desktop "type="search" placeholder="Знайти"><div> <input    type="image" src="img/search-lens.png" class="search-lens "></input></div></form>
+                  <form class="search-box__desktop"><input class="search-txt__desktop "type="search" placeholder="Знайти"><div> <button type="submit" class="input-submit" ></button></div></form>
                
                   <div class="tablet-languages">
                      <a class="tablet-lang" href="#">
@@ -68,9 +69,9 @@
                </div>
             </div>
             <div class="desktop-basket">
-               <div class="shop-basket  fa fa-shopping-basket" aria-hidden="true">
+               <a class="shop-basket  fa fa-shopping-basket" aria-hidden="true">
                   <div class="shop-items">0</div>
-               </div>
+               </a>
             </div>
             <div class="contacts-container">
                <div class="tablet-contacts">
@@ -84,7 +85,7 @@
                </div>
             </div>
             <div class="basket-container">
-               <form action=""><a  class="search-box"><input  class="search-txt "type="text" ><input type="image" src="img/search-lens.png" class="search-lens "></input></a ></form>
+               <form class="search-box__desktop"><input class="search-txt__desktop "type="search" placeholder="Знайти"><div> <button type="submit" class="input-submit" ></button></div></form>
                <div class="tablet-languages">
                   <a class="tablet-lang" href="#">
                      ua<i class="lang fa fa-angle-down" aria-hidden="true"></i>
@@ -95,9 +96,9 @@
                   </div>
                   </a>
                </div>
-               <div class="shop-basket  fa fa-shopping-basket" aria-hidden="true">
+               <a  class="shop-basket  fa fa-shopping-basket" aria-hidden="true">
                   <div class="shop-items">0</div>
-               </div>
+               </a>
             </div>
             <div class="phones">
                <a href="tel:+380-020-23-321" class="tel1">+380-020-23-321</a>
@@ -369,6 +370,7 @@
          </div>
       </header>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
       <script src="js/main.js"></script>
       <script src="js/libs.min.js"></script>
    </body>

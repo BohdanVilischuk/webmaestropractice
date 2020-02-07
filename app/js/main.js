@@ -93,8 +93,5 @@ $(document).ready(function(){
     });
    });
 
-$('.item').on('click', function(){
-    $('.opened').toggleClass('current');
-}); 
 
 
