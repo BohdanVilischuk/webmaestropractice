@@ -40,6 +40,10 @@
     .search-txt__desktop {
         max-width: 110px;
         color: #000;
+        border-bottom: 1px solid black;
+    }
+    .search-txt__desktop::placeholder {
+        color: black;
     }
     a {
         color: black;
